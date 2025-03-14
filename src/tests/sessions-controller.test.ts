@@ -19,7 +19,7 @@ describe("SessionsController", () => {
 
         user_id = userRes.body.id
 
-        const loginUser = await await request(app).post("/sessions").send({
+        const loginUser = await request(app).post("/sessions").send({
             email: "auth_test_euser@example.com",
             password: "password123", 
         })
